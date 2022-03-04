@@ -248,11 +248,7 @@ width: 30px;
   margin-bottom: 30px;
 }
 
-.images img {
-  
-  margin: 10px;
 
-}
 .cI{
   display: flex;
   justify-content: center;
@@ -447,9 +443,7 @@ width: 30px;
     width: 100%;
   }
   
-  .images img {
-    top: 10px !important;
-  }
+  
   #ci{
     height: 150px !important;
     width: 150px !important;
@@ -574,16 +568,7 @@ width: 30px;
   
 }
 @media all and (max-width: 1000px){
-  .images img {
-    
-   
-    width: 400px !important;
-    height: 400px !important;
-    margin: 5px;
-    padding: 0px;
-    top: 0px;
-    bottom: 0px;
-  }
+ 
   .FAQ{
     height: 150vh !important;
     
