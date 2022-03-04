@@ -1,6 +1,6 @@
 @font-face {
   font-family: "veener";
-  src: url("../public/font/Veneer.ttf");
+  src: url("./assets/font/Veneer.ttf");
   
   
 }
@@ -16,7 +16,7 @@ body{
   display: flex;
   flex-direction: column;
   
-  background-image: url("../public//banner.jpg");
+  background-image: url(./assets/banner.jpg);
   background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,7 +28,7 @@ body{
 
 .header{
   font-family: "veener";
-  background-image: url("../public/nav-bar.png");
+  background-image: url("./assets/nav-bar.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -137,7 +137,7 @@ width: 30px;
   align-items: center;
   
   position: relative;
-  background-image: url("../public/road-map-bg.jpg");
+  background-image: url("./assets/road-map-bg.jpg");
   background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -194,7 +194,7 @@ width: 30px;
   color: white;
 }
 .FAQ{
-  background-image: url("../public/faq-bg.png");
+  background-image: url(./assets/faq-bg.png);
   background-position:center;
   background-repeat: no-repeat;
   background-size:cover;
@@ -360,11 +360,11 @@ width: 30px;
 
 
 
-@media all and (max-width: 900px) {
+@media (max-width: 900px) {
 
 
   .wrapper{
-    background-image: url("../public//banner.jpg") no-repeat center center fixed;
+    background-image: url(./assets/banner.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -447,7 +447,7 @@ width: 30px;
   
 }
 
-@media all and (max-width: 500px){
+@media (max-width: 500px){
 
   #ci{
     height: 100px !important;
@@ -456,7 +456,7 @@ width: 30px;
   
   .wrapper{
     
-      background-image: url("../public//banner.jpg") no-repeat center center fixed;
+      background-image: url(./assets/banner.jpg) no-repeat center center fixed;
       -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -513,7 +513,7 @@ width: 30px;
   margin-left: 20px;
 }
 }
-@media all and (max-width: 440px){
+@media (max-width: 440px){
   .gh{
     margin-top: 20px !important;
   }
@@ -561,7 +561,7 @@ width: 30px;
   }
   
 }
-@media all and (max-width: 1000px){
+@media (max-width: 1000px){
  
   .FAQ{
     height: 150vh !important;
@@ -579,7 +579,7 @@ width: 30px;
 
 
 }
-@media all and (max-width: 1300px){
+@media (max-width: 1300px){
 
   #ci{
     height: 150px !important;
@@ -593,7 +593,7 @@ width: 30px;
 }
 
 
-@media all and (max-width: 440px){
+@media (max-width: 440px){
 
  
   .roadmApText{
@@ -606,7 +606,7 @@ width: 30px;
     padding: 10px !important;
   }
   .wrapper{
-    background-image: url("../public//banner.jpg") no-repeat center center fixed;
+    background-image: url(./assets/banner.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -737,7 +737,7 @@ width: 30px;
 
 
 
-@media all and (max-width: 1161px){
+@media (max-width: 1161px){
   
   #gimage{
     bottom: 125px ;
@@ -747,14 +747,14 @@ width: 30px;
   }
 }
 
-@media all and (min-width: 1161px){
+@media (min-width: 1161px){
   .carosal{
     width: 100%;
   }
 
 }
 
-@media all and (max-width: 750px){
+@media (max-width: 750px){
   #ci{
     height: 100px !important;
     width: 100px !important;
@@ -762,7 +762,7 @@ width: 30px;
 
 }
 
-@media all and(max-width:375){
+@media (max-width:375){
   .falseImage{
     display: flex;
     flex-direction: column;
