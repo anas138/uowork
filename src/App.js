@@ -15,7 +15,11 @@ function App() {
   const images=["a.png","b.png","c.png","d.png","e.png","f.png","g.png","h.png","bunny.png","bunn2.png"]
   useEffect(()=>{
     AOS.init();
-  },[])
+    if(window.innerWidth <="375" ){
+      setScreen(false)
+    }
+  })
+
   const questiClick=(number)=>{
     setAnswer(!answer)
     setIndex(number)
@@ -248,7 +252,7 @@ function App() {
            <span className="h2">FAQ</span>
            
            <div onClick={()=>{questiClick(1)}}>Q : WHAT IS THE TOTAL AMOUNT OF NFTS IN THE EVIL APE CLUB COLLECTION? {index==1 && answer==true?     <FaSortUp />: <FaSortDown /> }</div> 
-           <div className={`${(answer==true && index==1)?'answerVisible':"anewers"}`}  data-aos="fade-down"   data-aos-easing="ease-in-sine">A : THERE ARE 6969 UNIQUE EVIL APES</div>
+           <div className={`${(answer==true && index==1)?'answerVisible':"anewers"}`}  data-aos="fade-down"   data-aos-easing="ease-in">A : THERE ARE 6969 UNIQUE EVIL APES</div>
            
            <div onClick={()=>{questiClick(2)}} >Q : HOW MUCH IS IT TO MINT? {index==2 && answer==true?<FaSortUp/>:<FaSortDown/>}</div>
            <div className={`${(answer==true && index==2)?'answerVisible':"anewers"}`}  data-aos="fade-down"   data-aos-easing="ease-in-sine">A : OUR WHITELIST PRESALE MINT PRICE IS <br/> 0.06 ETH PUBLIC SALE IS 0.065 ETH ?</div>
