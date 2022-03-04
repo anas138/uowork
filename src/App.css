@@ -1,38 +1,802 @@
-.App {
+@font-face {
+  font-family: "veener";
+  src: url("../public/font/Veneer.ttf");
+  
+  
+}
+body{
+  font-family: "veener";
+  overflow-x: hidden;
+  
+  
+}
+
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  
+  background-image: url("../public//banner.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  border-bottom:  2px solid  rgb(185, 21, 21);
+  
+
+}
+
+.header{
+  font-family: "veener";
+  background-image: url("../public/nav-bar.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 1000px;
+  
+  
+  
+}
+.header a{
+  margin: 5px 30px;
+  padding: 2px;
+  color: whitesmoke;
+  cursor: pointer;
+  text-decoration: none;
   text-align: center;
+  opacity: 1;
+  
+  
+}
+.header a img{
+  margin-left: 5px;
+  background-color: rgb(185, 21, 21);
+  color: white;
+  border-radius: 50%;
+  opacity: 1;
+}
+.headerlogo{
+  width: 150px;
+  margin-right: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home{
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  margin-top: 40px;
+  padding: 50px;
+  
+  
+}
+.home-sub-text{
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+
+  
+}
+.home-sub-text h2{
+  font-size: 30px;
+  font-weight: 300px;
+} 
+.colored{
+  font-size: 60px;
+}
+.evil-text{
+  background-color: rgb(185, 21, 21);
+  border: 0;
+  border-radius: 5px;
+  padding: 2px;
+}
+.home-button{
+  margin-top: 10px;
+  background-color: rgb(185, 21, 21);
+  border: 0;
+  padding: 10px 10px;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-size: 15px;
+  font-weight: bold;
+  
+  cursor: pointer;
+  width: 200px;
+  
+}
+.calender{
+display: flex;
+flex-direction: column;
+background-color: rgb(185, 21, 21);
+border-radius: 10px;
+padding: 5px 5px;
+margin: 10px 10px;
+padding: 10px 10px;
+align-items: center;
+width: 30px;
+}
+.main-calender{
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#bottom-red{
+  background-color: rgb(185, 21, 21);
+  margin-top: 0px;
+  padding: 20px 0px;
+  border: 0px;
+  border-radius: 5px;
+  
+
 }
 
-.App-header {
-  background-color: #282c34;
+
+
+.RoadMap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  position: relative;
+  background-image: url("../public/road-map-bg.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
   min-height: 100vh;
+  border-bottom:  2px solid  rgb(185, 21, 21);
+  
+
+}
+
+.roadMapHeading{
+  color: whitesmoke;
+}
+.roadMapImg{
+  position: absolute;
+  bottom: 0;
+}
+.meetTheTeam{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 50px;
+  background-color: black;
+  border-bottom:  2px solid  rgb(185, 21, 21);
+
+}
+.meetTheTeam h2{
+  color: whitesmoke;
+  
+}
+.team{
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 50px;
+  
+  
+
+}
+.teamMembers{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10x;
+  margin: 10px 20px;
+
+}
+.teamMembers h3, .teamMembers small,.teamMembers span {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.FAQ{
+  background-image: url("../public/faq-bg.png");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 90px;
+  height: 125vh;
+  overflow-y: hidden;
+ 
+  
+}
+.h2{
+     font-size: 50px;
+     
+     
+}
+.faq-text{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  cursor: pointer;
+  overflow: hidden;
+}
+.faq-text div{
+  font-size: 25px;
+  margin: 10px 2px;
+  border-bottom: 1px solid rgb(233, 227, 227);
+  padding: 10px;
+  
+  
+} 
+.images{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  
+  
+  
+}
+.carosal{
+  margin-bottom: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.images img {
+  
+  margin: 10px;
+
+}
+.cI{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.navButton{
+  background-color: rgb(185, 21, 21);
+  border: 0;
+  border-radius: 10px;
+  padding: 20px 10px;
+  color: whitesmoke;
+  cursor: pointer;
+  
+  
+
+}
+.footer{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+.footer-icon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding: 20px;
+  border-bottom: 1px solid rgb(233, 227, 227);
+}
+.lastHeading{
+  color: whitesmoke;
+  padding: 20px;
+  text-align: center;
+}
+.roadmapCircles{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 5%;
+  
+
+}
+
+.roadmapCircles div img{
+  
+  margin-left: 10px;
+  margin-top: 20px;
+  padding: 10px;
+}
+.roadmapCircles div button{
+  background-color: rgb(185, 21, 21);
+  padding: 5px;
+  margin: 5px;
+  border: 0px;
+ border-radius: 5px;
+ color: whitesmoke;
+}
+.sideHeading{
+  margin-left:770px;
+}
+.roadmApText{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  border-radius: 20px;
+  padding: 20px 50px;
+  margin-bottom: 200px;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.teamMembers img{
+  height: 200px;
+  width:200px
+}
+.imagesWraper{
+  background-color: black;
+   
+}
+
+
+#number{
+  color: rgb(185, 21, 21);
+}
+.anewers{
+  display:none;
+}
+.answerVisible{
+  background-color:rgb(185, 21, 21) ;
+  display: block;
+  border: 0px;
+}
+#achor{
+  opacity: 100% !important;
+  color: white;
+}
+#no{
+  color: white;
+  font-size: 30px;
+}
+#te{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 8.5px;
+  padding-top: 2px;
+}
+
+
+
+
+
+
+@media all and (max-width: 900px) {
+
+
+  .wrapper{
+    background-image: url("../public//banner.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .header{
+    display: flex;
+    width: 600px;
+    
+  }
+  .header a{
+    display: flex;
+    padding: 2px;
+    margin: 5px;
+    
+    
+  }
+  .flexHeader{
+    display: flex !important;
+   
+  }
+  .header a img{
+    margin-left: 2px;
+    height: 30px;
+    width: 30px;
+    
+  }
+  .teamMembers img{
+     height: 50px;
+     width: 70px;
+  }
+  .sideHeading{
+    margin-left:200px;
+  }
+  .images{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+  
+  
+
+  .navButton{
+    background-color: rgb(185, 21, 21);
+    border: 0;
+    border-radius: 10px;
+    padding: 7px 5px;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 15px!important;
+  }
+  .discodIcon,.insta,.twit{
+    font-size: 10px !important;
+  }
+  .headerlogo{
+    margin-right: 20px;
+  }
+ 
+
+  .images{
+    background-color: black;
+    
+    
+    
+
+  }
+  .carosal{
+    width: 100%;
+  }
+  
+  .images img {
+    top: 10px !important;
+  }
+  #ci{
+    height: 150px !important;
+    width: 150px !important;
+  }
+    
+  
+  
+}
+
+@media all and (max-width: 500px){
+
+  #ci{
+    height: 100px !important;
+    width: 100px !important;
+  }
+  
+  .wrapper{
+    
+      background-image: url("../public//banner.jpg") no-repeat center center fixed;
+      -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+      width: 100%;
+    }
+  
+  .header{
+    display: flex;
+    width: 460px;
+    
+  }
+  .header a{
+    display: flex;
+    padding: 0px;
+    margin: 2px;
+    
+    
+  }
+  .teamMembers{
+    display: block !important;
+    margin: 5px;
+  }
+  .teamMembers img{
+    margin-top: 10px;
+    height: 120px !important;
+    width: 120px !important;
+    display: block !important;
+ }
+ .roadMapImg{
+   width: 300px;
+ }
+ .images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ }
+ 
+
+.team{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.FAQ{
+  height: 180vh !important;
+  
+}
+
+.faq-text{
+  margin-left: 20px;
+}
+}
+@media all and (max-width: 440px){
+  .gh{
+    margin-top: 20px !important;
+  }
+  .calender{
+    padding: 5px 25px !important;
+    margin-bottom: 20px;
+  }
+
+  
+  
+  .wrapper{
+    width: 400px;
+    height: 500px;
+  }
+
+  .header{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+   }
+   .header a{
+     display: block;
+     
+   }
+   .team{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+   }
+   .teamMembers img{
+     text-align: center;
+   }
+   
+   .FAQ{
+     margin-left: 50px;
+   }
+   .sideHeading{
+    margin-left:50px;
+  }
+  .FAQ{
+    height: 220vh !important;
+    
+  }
+  
+}
+@media all and (max-width: 1000px){
+  .images img {
+    
+   
+    width: 400px !important;
+    height: 400px !important;
+    margin: 5px;
+    padding: 0px;
+    top: 0px;
+    bottom: 0px;
+  }
+  .FAQ{
+    height: 150vh !important;
+    
+  }
+  #ci{
+    height: 150px !important;
+    width: 150px !important;
+  }
+  .teamMembers img{
+    height: 50px;
+    width: 70px;
+ }
+ 
+
+
+}
+@media all and (max-width: 1300px){
+
+  #ci{
+    height: 150px !important;
+    width: 150px !important;
+  }
+  .FAQ{
+    height: 150vh !important;
+    
+  }
+
+}
+
+
+@media all and (max-width: 440px){
+
+ 
+  .roadmApText{
+    overflow-y: hidden !important;
+  }
+  .evil-text{
+    background-color: rgb(185, 21, 21);
+    border: 0;
+    border-radius: 5px;
+    padding: 10px !important;
+  }
+  .wrapper{
+    background-image: url("../public//banner.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    width: 100%;
+  }
+  *{
+    margin: 0px !important;
+    box-sizing: border-box;
+    overflow-x: hidden !important;
+   
+    
+  }
+  .wrapper{
+    height: 130vh !important;
+    width: 100%;
+  }
+
+  .header{
+    position: relative;
+    margin-top:0px;
+    width: 100%;
+    
+   }
+   .flexHeader{
+     display: flex !important;
+    
+   }
+   
+   .header a{
+    margin: 10px 5px !important;
+    padding: 0 !important;
+    
+    
+
+    
+   }
+   .team{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+   }
+   .teamMembers img{
+     text-align: center;
+     margin: 10px !important;
+   }
+   
+   
+    
+ 
+    
+    
+   
+   .FAQ{
+     margin-left:0px !important;
+   }
+   .sideHeading{
+    margin-left: 0px !important;
+  }
+  .FAQ{
+    height: 100vh !important;
+    width: 400px !important;
+    
+  }
+
+  .faq-text h2{
+   margin-left: 200px !important;
+  }
+  .faq-text div{
+    font-size: 12px !important;
+    margin-left: 10px!important;
+    margin-top: 20px !important;
+    overflow-wrap: break-word;
+
+    
+  }
+  .faq-text{
+    margin-top: 100px !important;
+    margin-left: 50px !important;
+    cursor: none !important;
+  }
+ 
+ 
+
+  .navButton{
+    background-color: rgb(185, 21, 21);
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 10px !important;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 10px !important;
+  
+}
+.discodIcon,.insta,.twit{
+  font-size: 12px !important;
+}
+.roadmApText{
+  margin-bottom: 200px !important;
+}
+.header a img, .discodIcon,.insta,.twit{
+  margin: 5px !important;
+
+}
+.home-sub-text{
+  width: 100% !important;
+}
+.calender{
+  margin: 5px !important;
+}
+
+
+#ci{
+  width: 5px !important;
+  height: 5px !important;
+}
+
+#cd{
+  height: 80% !important;
+  width: 80% !important;
+  margin-top: 10px !important;
+}
+
+}
+
+
+
+
+@media all and (max-width: 1161px){
+  
+  #gimage{
+    bottom: 125px ;
+  }
+  .carosal{
+    width: 100%;
   }
 }
+
+@media all and (min-width: 1161px){
+  .carosal{
+    width: 100%;
+  }
+
+}
+
+@media all and (max-width: 750px){
+  #ci{
+    height: 100px !important;
+    width: 100px !important;
+  }
+
+}
+
+@media all and(max-width:375){
+  .falseImage{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+  }
+  #cd{
+    height: 80% !important;
+    width: 80% !important;
+  }
+}
+
+
+
+
+
