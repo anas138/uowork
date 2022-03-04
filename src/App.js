@@ -10,12 +10,13 @@ import { Carousel } from 'react-responsive-carousel';
 
 function App() {
   const [answer, setAnswer] = useState(false)
-  const [screen, setScreen] = useState(true)
+  const [screen, setScreen] = useState()
   const [index, setIndex] = useState(null)
+  const [number,setNumber] =useState(1)
   const images = ["a.png", "b.png", "c.png", "d.png", "e.png", "f.png", "g.png", "h.png", "bunny.png", "bunn2.png"]
   useEffect(() => {
     AOS.init();
-    if (window.innerWidth <= "375") {
+    if (window.innerWidth <= "400") {
       setScreen(false)
     }
   })
@@ -46,6 +47,8 @@ function App() {
 
         <div className="home" id="home">
           <div className="home-sub-text">
+
+
             <h2> <span style={{ fontSize: "30px" }}>WELCOME TO </span>     <br />
               <span className="colored">THE <span className="evil-text">EVIL APE</span></span> <br />
               <span style={{ fontSize: "50px" }}>CLUB.</span></h2>
@@ -67,8 +70,17 @@ function App() {
                 <span id="no">04</span>
                 <small id="te">Seconds</small>
               </div>
+
             </div>
+            <div className="buttonFlex">
             <button className="home-button">MINT EVIL  APE</button>
+            <div style={{display:"flex",justifyContent:"center",alignItems:"center",marginRight:"20px"}} className="upDownDiv">
+            <button className="updown" onClick={()=>{setNumber((prev)=>(prev+1))}}> <span style={{fontSize:"20px"}}>+</span></button>
+            <span className="buttonSpan">{number}</span>
+            <button  className="updown"  onClick={()=>{ number >=0 &&  setNumber((prev)=>(prev -1))}} ><span style={{fontSize:"20px"}}>-</span></button>
+            </div>
+            </div>
+            <div style={{fontSize:"30px"}}>10000/10000 Available</div>
           </div>
           <div className="sideHeading"></div>
         </div>

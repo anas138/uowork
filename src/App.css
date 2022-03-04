@@ -10,6 +10,24 @@ body{
   
   
 }
+.updown{
+  background-color: rgb(185, 21, 21);
+  border: 0;
+  padding: 10px 10px;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+.buttonFlex{
+  display: flex;
+  justify-content: center;
+  
+}
 
 
 .wrapper{
@@ -99,6 +117,7 @@ body{
   color: whitesmoke;
   font-size: 15px;
   font-weight: bold;
+  height: 50px;
   
   cursor: pointer;
   width: 200px;
@@ -354,6 +373,9 @@ width: 30px;
   font-size: 8.5px;
   padding-top: 2px;
 }
+#ci{
+  margin: 10px;
+}
 
 
 
@@ -361,6 +383,7 @@ width: 30px;
 
 
 @media (max-width: 900px) {
+ 
 
 
   .wrapper{
@@ -442,12 +465,19 @@ width: 30px;
     height: 150px !important;
     width: 150px !important;
   }
+  .FAQ{
+    height: 150vh !important;
+  }
     
   
   
 }
 
 @media (max-width: 500px){
+
+  .sideHeading{
+    margin-left:50px;
+  }
 
   #ci{
     height: 100px !important;
@@ -514,6 +544,11 @@ width: 30px;
 }
 }
 @media (max-width: 440px){
+  
+  .buttonSpan{
+    margin: 5px !important;
+  }
+  
   .gh{
     margin-top: 20px !important;
   }
@@ -655,11 +690,6 @@ width: 30px;
      text-align: center;
      margin: 10px !important;
    }
-   
-   
-    
- 
-    
     
    
    .FAQ{
@@ -701,7 +731,9 @@ width: 30px;
     color: whitesmoke;
     cursor: pointer;
     font-size: 10px !important;
-  
+}
+.upDownDiv{
+  margin-left: 5px !important;
 }
 .discodIcon,.insta,.twit{
   font-size: 12px !important;
