@@ -55,13 +55,7 @@ body{
   
   
 }
-.header a img{
-  margin-left: 5px;
-  background-color: rgb(185, 21, 21);
-  color: white;
-  border-radius: 50%;
-  opacity: 1;
-}
+
 .headerlogo{
   width: 150px;
   margin-right: 40px;
@@ -715,7 +709,7 @@ width: 30px;
 .roadmApText{
   margin-bottom: 200px !important;
 }
-.header a img, .discodIcon,.insta,.twit{
+ .discodIcon,.insta,.twit{
   margin: 5px !important;
 
 }
