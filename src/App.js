@@ -82,7 +82,7 @@ function App() {
      <Carousel showThumbs={false} className="carosal" autoPlay={true} showStatus={false} showIndicators={false} interval={500}>
      <div className="cI">
      <img src="a.png" width="200px" height="250px" id="ci"/>
-     <img src="galler-2.png"  width="200px" height="250px" id="ci"/>
+     <img src="lava.png"  width="200px" height="250px" id="ci"/>
      <img src="b.png"  width="200px" height="250px" id="ci"/>
      <img src="c.png"  width="200px" height="250px" id="ci"/>
      <img src="d.png" width="200px" height="250px" id="ci"/>
