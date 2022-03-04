@@ -98,7 +98,7 @@ function App() {
 
             </Carousel>
           }
-          {screen == false &&
+          {screen === false &&
             <div className="falseImage">
 
               <img src="a.png" id="cd" />
