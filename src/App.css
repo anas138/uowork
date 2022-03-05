@@ -679,7 +679,7 @@ width: 30px;
     background-color: rgb(185, 21, 21);
     border: 0;
     border-radius: 5px;
-    padding: 10px !important;
+    padding: 2px  !important;
   }
   .wrapper{
     background-image: url(./assets/banner.jpg) no-repeat center center fixed;
