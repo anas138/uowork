@@ -34,14 +34,23 @@ body{
   display: flex;
   flex-direction: column;
   
-  background-image: url(./assets/banner.jpg);
+  background-image: url(./assets/road-map-bg.jpg);
   background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
   border-bottom:  2px solid  rgb(185, 21, 21);
-  
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
 
+}
+.headerImg{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
 }
 
 .header{
@@ -58,6 +67,7 @@ body{
   padding: 5px;
   border-radius: 5px;
   width: 1000px;
+  z-index: 1;
   
   
   
@@ -85,6 +95,7 @@ body{
   margin-left: 40px;
   margin-top: 40px;
   padding: 50px;
+  z-index: 1;
   
   
 }
@@ -213,7 +224,7 @@ width: 30px;
   color: white;
 }
 .FAQ{
-  background-image: url(./assets/faq-bg.png);
+  background-image: url(./assets/road-map-bg.jpg);
   background-position:center;
   background-repeat: no-repeat;
   background-size:cover;
@@ -222,8 +233,15 @@ width: 30px;
   padding-right: 90px;
   height: 125vh;
   overflow-y: hidden;
+  position: relative;
  
   
+}
+.faqImg{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
 }
 .h2{
      font-size: 50px;
@@ -237,6 +255,7 @@ width: 30px;
   color: whitesmoke;
   cursor: pointer;
   overflow: hidden;
+  z-index: 1;
 }
 .faq-text div{
   font-size: 25px;
@@ -259,6 +278,7 @@ width: 30px;
 }
 .carosal{
   margin-bottom: 30px;
+
 }
 
 
@@ -383,17 +403,18 @@ width: 30px;
 
 
 @media (max-width: 900px) {
+  .faqImg{
+    height: 200px !important;
+    width: 200px !important;
+  }
+  .headerImg{
+    height: 500px !important;
+    width: 400px !important;
+  }
  
 
 
-  .wrapper{
-    background-image: url(./assets/banner.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-    width: 100%;
-  }
+ 
   .header{
     display: flex;
     width: 600px;
@@ -474,6 +495,10 @@ width: 30px;
 }
 
 @media (max-width: 500px){
+  .headerImg{
+    height: 300px !important;
+    width: 300px !important;
+  }
 
   .sideHeading{
     margin-left:50px;
@@ -544,6 +569,10 @@ width: 30px;
 }
 }
 @media (max-width: 440px){
+  .wrapper{
+    background-size:  cover ;
+    
+  }
   
   .buttonSpan{
     margin: 5px !important;
@@ -597,6 +626,10 @@ width: 30px;
   
 }
 @media (max-width: 1000px){
+  .faqImg{
+    height: 200px !important;
+    width: 200px !important;
+  }
  
   .FAQ{
     height: 150vh !important;
@@ -629,7 +662,15 @@ width: 30px;
 
 
 @media (max-width: 440px){
+  .faqImg{
+    height: 200px !important;
+    width: 200px !important;
+  }
+.headerImg{
+  height: 200px !important;
+    width: 200px !important;
 
+}
  
   .roadmApText{
     overflow-y: hidden !important;
@@ -770,6 +811,88 @@ width: 30px;
 
 
 @media (max-width: 1161px){
+  .header{
+    display: flex;
+    width: 600px;
+    
+  }
+  .header a{
+    display: flex;
+    padding: 2px;
+    margin: 5px;
+    
+    
+  }
+  .flexHeader{
+    display: flex !important;
+   
+  }
+  .header a img{
+    margin-left: 2px;
+    height: 30px;
+    width: 30px;
+    
+  }
+  .teamMembers img{
+     height: 50px;
+     width: 70px;
+  }
+  .sideHeading{
+    margin-left:200px;
+  }
+  .images{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+  
+  
+
+  .navButton{
+    background-color: rgb(185, 21, 21);
+    border: 0;
+    border-radius: 10px;
+    padding: 7px 5px;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 15px!important;
+  }
+  .discodIcon,.insta,.twit{
+    font-size: 10px !important;
+  }
+  .headerlogo{
+    margin-right: 20px;
+  }
+ 
+
+  .images{
+    background-color: black;
+    
+    
+    
+
+  }
+  .carosal{
+    width: 100%;
+  }
+  
+  
+  #ci{
+    height: 150px !important;
+    width: 150px !important;
+  }
+  .FAQ{
+    height: 150vh !important;
+  }
+    
+  
+  
+
+  .faqImg{
+    height: 200px !important;
+    width: 200px !important;
+  }
   
   #gimage{
     bottom: 125px ;
@@ -780,9 +903,14 @@ width: 30px;
 }
 
 @media (min-width: 1161px){
-  .carosal{
-    width: 100%;
-  }
+  
+  
+    .carosal{
+      margin-bottom: 30px;
+      width: 1326px !important;
+    
+    }
+    
 
 }
 
@@ -794,7 +922,7 @@ width: 30px;
 
 }
 
-@media (max-width:375){
+@media (max-width:375px){
   .falseImage{
     display: flex;
     flex-direction: column;
@@ -804,6 +932,12 @@ width: 30px;
   #cd{
     height: 80% !important;
     width: 80% !important;
+  }
+}
+
+@media (min-width:1400px){
+  .headerImg{
+    right: 30%;
   }
 }
 

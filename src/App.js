@@ -29,6 +29,7 @@ function App() {
 
     <div className="App">
       <div className="wrapper">
+        <img src="sbg2.png" className="headerImg"/>
         <div className="header" >
           <img src="logo.png" className="headerlogo" />
           <div className="flexHeader">
@@ -38,13 +39,13 @@ function App() {
             <a id="achor" href="#faq">FAQ</a>
           </div>
 
-          <a id="headImg"><FaInstagram className="insta" size="2.5em" style={{ padding: "7px", borderRadius: "50%", backgroundColor: "rgb(185, 21, 21)", marginLeft: "5px" }} /><FaTwitter className="twit" size="2.5em" style={{ padding: "7px", borderRadius: "50%", backgroundColor: "rgb(185, 21, 21)", marginLeft: "5px" }} />< FaDiscord className="discodIcon" size="2.5em" style={{ padding: "7px", borderRadius: "50%", backgroundColor: "rgb(185, 21, 21)", marginLeft: "5px" }} /></a>
+          <a id="headImg"><FaInstagram className="insta" size="2.5em" style={{ padding: "7px", borderRadius: "50%", backgroundColor: "rgb(185, 21, 21)", marginLeft: "5px",color:"white" }} /><FaTwitter className="twit" size="2.5em" style={{ padding: "7px", borderRadius: "50%", backgroundColor: "rgb(185, 21, 21)", marginLeft: "5px",color:"white" }} />< FaDiscord className="discodIcon" size="2.5em" style={{ padding: "7px", borderRadius: "50%", backgroundColor: "rgb(185, 21, 21)", marginLeft: "5px",color:"white" }} /></a>
           <button style={{ fontWeight: "bold", fontSize: "18px" }} className="navButton">MINT EVIL APE</button>
 
         </div>
 
-
-
+     
+        
         <div className="home" id="home">
           <div className="home-sub-text">
 
@@ -259,7 +260,7 @@ function App() {
 
 
       <div className="FAQ" id="faq">
-
+      <img src="sbg1.png" className="faqImg"/>
         <div className="faq-text">
           <span className="h2">FAQ</span>
 
@@ -289,6 +290,7 @@ function App() {
           <img src="social-icon.png" />
         </div>
         <div className="lastHeading">@ 2022 EVIL APE | ALL RIGHTS RESERVED</div>
+        
       </div>
 
     </div>
