@@ -132,7 +132,7 @@ function App() {
             <div className="falseImage">
 
               <img src="a.png" id="cd" />
-              <img src="galler-2.png" id="cd" />
+              <img src="lava.png" id="cd" />
               <img src="b.png" id="cd" />
               <img src="c.png" id="cd" />
               <img src="d.png" id="cd" />
