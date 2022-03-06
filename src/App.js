@@ -178,12 +178,12 @@ function App() {
           <br />
           <br />
           <div data-aos="fade-up"
-            data-aos-duration="3000"><span id="number">25% </span> We will begin to distribute 10 ETH right back into the community among<br />
+            data-aos-duration="3000"><span id="number">25% </span>We will begin to distribute 10 ETH right back into the community among<br />
             random Evil Ape Club NFT holders.</div>
           <br />
 
           <div data-aos="fade-up"
-            data-aos-duration="3000"> <span id="number">50%</span> Acquire land in both Sandbox and Decentraland to establish our<br />
+            data-aos-duration="3000"> <span id="number">50% </span>Acquire land in both Sandbox and Decentraland to establish our<br />
             presence in the Metaverse. We believe as the metaverse grows everyone<br />
             needs a place to call their own. We will acquire land and build a unique<br />
             meeting place exclusive to Evil Ape Club holders where we will host virtual <br/>
@@ -192,13 +192,13 @@ function App() {
           <br />
           <br />
           <div data-aos="fade-up"
-            data-aos-duration="3000"> <span id="number">60%</span> 60 ETH goes directly into our community wallet, this will be used for:<br />
+            data-aos-duration="3000"> <span id="number">60% </span>60 ETH goes directly into our community wallet, this will be used for:<br />
             Marketing, Merch development, and our community DAO, where holders will<br />
             be able to vote on community decisions as we ascend into the Metaverse</div>
           <br />
           <br />
           <div data-aos="fade-up"
-            data-aos-duration="3000"> <span id="number">70%</span>We are going to be doing limited edition merch. For now this includes<br />
+            data-aos-duration="3000"> <span id="number">70% </span>We are going to be doing limited edition merch. For now this includes<br />
             stylish T-Shirts, hoodies, and more. Designs will be limited to create <br />
             exclusivity. Merch drops will be in limited supply</div>
           <br />
@@ -211,7 +211,7 @@ function App() {
           <br />
           <br />
           <div data-aos="fade-up"
-            data-aos-duration="3000"><span id="number">100%</span>100% Roadmap v2.0 - At the completion of roadmap v1.5 we will unveil <br />
+            data-aos-duration="3000"><span id="number">100% </span>Roadmap v2.0 - At the completion of roadmap v1.5 we will unveil <br />
             roadmap v2.0…Stay Tuned…Stay evil!</div>
         </div>
 
