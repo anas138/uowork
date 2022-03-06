@@ -39,8 +39,11 @@ function App() {
             <a id="achor" href="#faq">FAQ</a>
           </div>
 
-          <a id="headImg"><FaInstagram className="insta" size="2.5em" style={{ padding: "7px", borderRadius: "50%", backgroundColor: "rgb(185, 21, 21)", marginLeft: "5px",color:"white" }} /><FaTwitter className="twit" size="2.5em" style={{ padding: "7px", borderRadius: "50%", backgroundColor: "rgb(185, 21, 21)", marginLeft: "5px",color:"white" }} />< FaDiscord className="discodIcon" size="2.5em" style={{ padding: "7px", borderRadius: "50%", backgroundColor: "rgb(185, 21, 21)", marginLeft: "5px",color:"white" }} /></a>
-          <button style={{ fontWeight: "bold", fontSize: "18px" }} className="navButton">MINT EVIL APE</button>
+          <a id="headImg"><a target="_blank" href="http://www.instagram.com/evilapeclubnft" id="sIcon"><FaInstagram className="insta" size="2.5em" style={{ padding: "7px", borderRadius: "50%", backgroundColor: "rgb(185, 21, 21)", marginLeft: "0px",color:"white" }} /></a>
+          <a target="_blank" href="http://www.twitter.com/evilapeclubNFT" id="sIcon"><FaTwitter className="twit" size="2.5em" style={{ padding: "7px", borderRadius: "50%", backgroundColor: "rgb(185, 21, 21)", marginLeft: "0px",color:"white" }} /></a>
+          <a id="sIcon">< FaDiscord className="discodIcon" size="2.5em" style={{ padding: "7px", borderRadius: "50%", backgroundColor: "rgb(185, 21, 21)", marginLeft: "0px",color:"white" }} /></a>
+          </a>
+          {/* <button style={{ fontWeight: "bold", fontSize: "18px" }} className="navButton">MINT EVIL APE</button> */}
 
         </div>
 
@@ -147,7 +150,7 @@ function App() {
 
 
       <div className="RoadMap" id="roadMap">
-        <h1 className="roadMapHeading">Road Map</h1>
+        <h1 className="roadMapHeading"> Raod Map V1.5</h1>
         {/* <div className="roadmapCircles">
         <span style={{color:"white",marginRight:"5px"}}>ORIGINAL<br/> ROADMAP</span>
           <div>
@@ -175,23 +178,23 @@ function App() {
           <br />
           <br />
           <div data-aos="fade-up"
-            data-aos-duration="3000"><span id="number">25% </span>We will begin to distribute 5 ETH right back into the community among <br />
+            data-aos-duration="3000"><span id="number">25% </span> We will begin to distribute 10 ETH right back into the community among<br />
             random Evil Ape Club NFT holders.</div>
           <br />
 
           <div data-aos="fade-up"
-            data-aos-duration="3000"> <span id="number">50%</span>Acquire land in both Sandbox and Decentraland to establish our<br />
-            presence in the Metaverse. We believe as the metaverse grows everyone need <br />
-            a place to call their own. We will acquire land and build a unique meeting<br />
-            place exclusive to Evil Ape Club holders where we will host virtual community<br />
-            gatherings, holiday parties, contest and more.</div>
+            data-aos-duration="3000"> <span id="number">50%</span> Acquire land in both Sandbox and Decentraland to establish our<br />
+            presence in the Metaverse. We believe as the metaverse grows everyone<br />
+            needs a place to call their own. We will acquire land and build a unique<br />
+            meeting place exclusive to Evil Ape Club holders where we will host virtual <br/>
+            community gatherings, holiday parties, contest, space for EAC holders to hold<br />
+            their own events and more.</div>
           <br />
           <br />
           <div data-aos="fade-up"
-            data-aos-duration="3000"> <span id="number">60%</span> 50 ETH goes directly into our community wallet, this will be used for<br />
-            Marketing, Merch development, and this will be used in our community DAO, <br />
-            where holders will be able to vote on community decisions as we ascend into <br />
-            the Metaverse</div>
+            data-aos-duration="3000"> <span id="number">60%</span> 60 ETH goes directly into our community wallet, this will be used for:<br />
+            Marketing, Merch development, and our community DAO, where holders will<br />
+            be able to vote on community decisions as we ascend into the Metaverse</div>
           <br />
           <br />
           <div data-aos="fade-up"
