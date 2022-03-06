@@ -16,7 +16,8 @@ function App() {
   const images = ["a.png", "b.png", "c.png", "d.png", "e.png", "f.png", "g.png", "h.png", "bunny.png", "bunn2.png"]
   useEffect(() => {
     AOS.init();
-    if (window.innerWidth <= "400") {
+    if (window.innerWidth <= "450") {
+      console.log(window.innerWidth)
       setScreen(false)
     }
   })
@@ -25,9 +26,21 @@ function App() {
     setAnswer(!answer)
     setIndex(number)
   }
+ 
+  document.addEventListener('scroll', function(e) {
+    if (window.innerWidth <= "450") {
+      console.log(window.innerWidth)
+      setScreen(false)
+    }
+    else{
+      setScreen(true)
+    }
+   
+
+  })
   return (
 
-    <div className="App">
+    <div className="App" >
       <div className="wrapper">
         
         <div className="header" >
