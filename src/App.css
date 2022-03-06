@@ -619,10 +619,7 @@ width: 60px;
 
   
   
-  .wrapper{
-    width: 400px;
-    height: 500px;
-  }
+  
 
   .header{
     display: flex;
@@ -773,12 +770,7 @@ width: 60px;
    .sideHeading{
     margin-left: 0px !important;
   }
-  .FAQ{
-    
-    width: 400px !important;
-    
-  }
-
+  
   .faq-text h2{
    margin-left: 200px !important;
   }
