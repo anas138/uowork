@@ -592,13 +592,11 @@ width: 60px;
   justify-content: center;
   text-align: center;
 }
-.FAQ{
-  height: 100vh !important;
-  
-}
+
 
 .faq-text{
   margin-left: 20px;
+  margin-bottom: 200px !important;
 }
 }
 @media (max-width: 440px){
