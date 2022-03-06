@@ -29,7 +29,7 @@ function App() {
 
     <div className="App">
       <div className="wrapper">
-        <img src="sbg2.png" className="headerImg"/>
+        
         <div className="header" >
           <img src="logo.png" className="headerlogo" />
           <div className="flexHeader">
@@ -47,6 +47,7 @@ function App() {
      
         
         <div className="home" id="home">
+        <img src="sbg2.png" className="headerImg"/>
           <div className="home-sub-text">
 
 
@@ -260,8 +261,12 @@ function App() {
 
 
       <div className="FAQ" id="faq">
-      <img src="sbg1.png" className="faqImg"/>
+      
+        <div className="faqWraper">
+        <img src="sbg1.png" className="faqImg"/>
         <div className="faq-text">
+
+        
           <span className="h2">FAQ</span>
 
           <div onClick={() => { questiClick(1) }}>Q : WHAT IS THE TOTAL AMOUNT OF NFTS IN THE EVIL APE CLUB COLLECTION? {index == 1 && answer == true ? <FaSortUp /> : <FaSortDown />}</div>
@@ -283,14 +288,19 @@ function App() {
           <div onClick={() => { questiClick(6) }}>Q : What Blockchain ? {index == 6 && answer == true ? <FaSortUp /> : <FaSortDown />}</div>
           <div className={`${(answer == true && index == 6) ? 'answerVisible' : "anewers"}`} data-aos="fade-down" data-aos-easing="ease-in-sine">A : ETH Blockchain</div>
         </div>
+        </div>
+
+
       </div>
       <div className="footer">
+        <div className="footerWraper">
         <div className="footer-icon">
           <img src="logo.png" height="100px" width="200px" />
           <img src="social-icon.png" />
         </div>
         <div className="lastHeading">@ 2022 EVIL APE | ALL RIGHTS RESERVED</div>
         
+      </div>
       </div>
 
     </div>

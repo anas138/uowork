@@ -45,12 +45,14 @@ body{
   position: relative;
   z-index: 1;
 
+
 }
 .headerImg{
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: 0;
+  z-index: -1;
+  height: 500px;
 }
 
 .header{
@@ -59,6 +61,7 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 1350px;
   
   display: flex;
   align-items: center;
@@ -66,7 +69,6 @@ body{
   margin: 20px;
   padding: 5px;
   border-radius: 5px;
-  width: 1000px;
   z-index: 1;
   
   
@@ -91,11 +93,13 @@ body{
 
 .home{
   display: flex;
-  align-items: center;
+  
   margin-left: 40px;
   margin-top: 40px;
   padding: 50px;
   z-index: 1;
+  max-width: 1350px;
+  position: relative;
   
   
 }
@@ -141,9 +145,9 @@ background-color: rgb(185, 21, 21);
 border-radius: 10px;
 padding: 5px 5px;
 margin: 10px 10px;
-padding: 10px 10px;
+padding: 10px 10px ;
 align-items: center;
-width: 30px;
+width: 60px;
 }
 .main-calender{
   display: flex;
@@ -172,7 +176,7 @@ width: 30px;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px;
-  min-height: 100vh;
+  
   border-bottom:  2px solid  rgb(185, 21, 21);
   
 
@@ -229,11 +233,11 @@ width: 30px;
   background-repeat: no-repeat;
   background-size:cover;
   display: flex;
-  justify-content: flex-end;
-  padding-right: 90px;
-  height: 125vh;
-  overflow-y: hidden;
+  justify-content: center;
   position: relative;
+ 
+  
+  
  
   
 }
@@ -242,6 +246,10 @@ width: 30px;
   bottom: 0;
   left: 0;
   z-index: 0;
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 400px;
+  width: 400px;
 }
 .h2{
      font-size: 50px;
@@ -256,6 +264,20 @@ width: 30px;
   cursor: pointer;
   overflow: hidden;
   z-index: 1;
+  justify-content: center;
+  
+ 
+}
+.faqWraper{
+  max-width: 1350px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 90px;
+  overflow-y: hidden;
+  width: 1350px;
+  
+
 }
 .faq-text div{
   font-size: 25px;
@@ -302,9 +324,18 @@ width: 30px;
 .footer{
   background-color: black;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
+  
  
+}
+.footerWraper{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
 }
 .footer-icon{
   display: flex;
@@ -402,14 +433,15 @@ width: 30px;
 
 
 
+
 @media (max-width: 900px) {
   .faqImg{
     height: 200px !important;
     width: 200px !important;
   }
   .headerImg{
-    height: 500px !important;
-    width: 400px !important;
+    height: 200px !important;
+    width: 200px !important;
   }
  
 
@@ -442,7 +474,7 @@ width: 30px;
      width: 70px;
   }
   .sideHeading{
-    margin-left:200px;
+    margin-left:500px;
   }
   .images{
     display: flex;
@@ -496,8 +528,8 @@ width: 30px;
 
 @media (max-width: 500px){
   .headerImg{
-    height: 300px !important;
-    width: 300px !important;
+    height: 200px !important;
+    width: 200px !important;
   }
 
   .sideHeading{
@@ -542,7 +574,7 @@ width: 30px;
     display: block !important;
  }
  .roadMapImg{
-   width: 300px;
+   width: 90%;
  }
  .images{
   display: flex;
@@ -619,10 +651,7 @@ width: 30px;
    .sideHeading{
     margin-left:50px;
   }
-  .FAQ{
-    height: 220vh !important;
-    
-  }
+  
   
 }
 @media (max-width: 1000px){
@@ -662,6 +691,12 @@ width: 30px;
 
 
 @media (max-width: 440px){
+  .home{
+    position: static;
+  }
+  .headerImg{
+    bottom: 0px !important;
+  }
   .faqImg{
     height: 200px !important;
     width: 200px !important;
@@ -811,6 +846,11 @@ width: 30px;
 
 
 @media (max-width: 1161px){
+  .headerImg{
+    height: 200px;
+    width: 200px;
+  }
+  
   .header{
     display: flex;
     width: 600px;
@@ -919,6 +959,13 @@ width: 30px;
     height: 100px !important;
     width: 100px !important;
   }
+  .sideHeading{
+    margin-left:100px;
+  }
+  .headerImg{
+    height: 200px;
+    width: 200px;
+  }
 
 }
 
@@ -936,9 +983,24 @@ width: 30px;
 }
 
 @media (min-width:1400px){
-  .headerImg{
-    right: 30%;
+  
+
+  .header{
+    display: flex;
+    width: 100%;
+    
   }
+  
+  .footerWraper{
+    display: flex;
+    width: 1350px;
+    flex-direction: column;
+    justify-content: center;
+  }
+    
+  
+  
+
 }
 
 
